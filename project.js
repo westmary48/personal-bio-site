@@ -45,3 +45,10 @@ const projectStringBuilder = () => {
     }        
 };
  projectStringBuilder();
+
+ document.getElementById('navToBio').addEventListener('click', function (e) {
+ }
+ document.getElementById('navToTechnologies').addEventListener('click', function (e) {
+}
+document.getElementById('navToProjects').addEventListener('click', function (e) {
+}
