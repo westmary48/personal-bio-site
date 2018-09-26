@@ -45,37 +45,29 @@ const createProjectCards = () => {
 createProjectCards();
 
 const addEvents = () => {
-    document.getElementById('navToBio').addEventListener('click', function (e) {
+    document.getElementById('navToBio').addEventListener('click', function(event) {
+        event.preventDefault()
+        document.getElementById('technologiesPage').classList.add('hideStuff')
+        document.getElementById('projectsPage').classList.add('hideStuff')
+        document.getElementById('bioPage').classList.remove('hideStuff')
     })
-    document.getElementById('navToTechnologies').addEventListener('click', function (e) {
+    document.getElementById('navToProjects').addEventListener('click', function(event) {
+        event.preventDefault()
+        document.getElementById('technologiesPage').classList.add('hideStuff')
+        document.getElementById('projectsPage').classList.remove('hideStuff')
+        document.getElementById('bioPage').classList.add('hideStuff')
     })
-   document.getElementById('navToProjects').addEventListener('click', function (e) {
-   })
-};
-
-const showBio = (e) => {
-    document.getElementById('technologiesPage').classList.add('hideStuff')
-    document.getElementById('ProjectsPage').classList.add('hideStuff')
-    document.getElementById('bioPage').classlist.remove('hideStuff')
-};
-
-addEvents();
-
-const showTechnologies = (e) => {
-    document.getElementById('bioPage').classList.add('hideStuff')
-    document.getElementById('ProjectsPage').classList.add('hideStuff')
-    document.getElementById('technologiesPage').classlist.remove('hideStuff')
+    document.getElementById('navToTechnologies').addEventListener('click', function(event) {
+        event.preventDefault()
+        document.getElementById('bioPage').classList.add('hideStuff')
+        document.getElementById('projectsPage').classList.add('hideStuff')
+        document.getElementById('technologiesPage').classList.remove('hideStuff')
+    })
 };
 
 addEvents();
 
-const showProjects = (e) => {
-    document.getElementById('projectsPage').classList.add('hideStuff')
-    document.getElementById('bioPage').classList.add('hideStuff')
-    document.getElementById('technologiesPage').classlist.remove('hideStuff')
-};
 
-addEvents();
 
 
 
