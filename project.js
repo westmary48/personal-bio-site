@@ -44,8 +44,14 @@ const createProjectCards = () => {
 };
 createProjectCards();
 
-//  document.getElementById('navToBio').addEventListener('click', function (e) {
+ document.getElementById('navToBio').addEventListener('click', function (e) {
+    e.preventDefault()
+ });
+ document.getElementById('navToTechnologies').addEventListener('click', function (e) {
+    e.preventDefault()
+ });
+document.getElementById('navToProjects').addEventListener('click', function (e) {
+    e.preventDefault()
+});
 
-//  document.getElementById('navToTechnologies').addEventListener('click', function (e) {
-// document.getElementById('navToProjects').addEventListener('click', function (e) {
-// }
+
