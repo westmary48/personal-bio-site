@@ -44,14 +44,38 @@ const createProjectCards = () => {
 };
 createProjectCards();
 
- document.getElementById('navToBio').addEventListener('click', function (e) {
-    e.preventDefault()
- });
- document.getElementById('navToTechnologies').addEventListener('click', function (e) {
-    e.preventDefault()
- });
-document.getElementById('navToProjects').addEventListener('click', function (e) {
-    e.preventDefault()
-});
+const addEvents = () => {
+    document.getElementById('navToBio').addEventListener('click', function (e) {
+    })
+    document.getElementById('navToTechnologies').addEventListener('click', function (e) {
+    })
+   document.getElementById('navToProjects').addEventListener('click', function (e) {
+   })
+};
+
+const showBio = (e) => {
+    document.getElementById('technologiesPage').classList.add('hideStuff')
+    document.getElementById('ProjectsPage').classList.add('hideStuff')
+    document.getElementById('bioPage').classlist.remove('hideStuff')
+};
+
+addEvents();
+
+const showTechnologies = (e) => {
+    document.getElementById('bioPage').classList.add('hideStuff')
+    document.getElementById('ProjectsPage').classList.add('hideStuff')
+    document.getElementById('technologiesPage').classlist.remove('hideStuff')
+};
+
+addEvents();
+
+const showProjects = (e) => {
+    document.getElementById('projectsPage').classList.add('hideStuff')
+    document.getElementById('bioPage').classList.add('hideStuff')
+    document.getElementById('technologiesPage').classlist.remove('hideStuff')
+};
+
+addEvents();
+
 
 

@@ -3,13 +3,11 @@ body {
     border-block-end-color: bisque
 }
 
-.naviLinks {
-    background-image: 
-
-}
-
 .navToBio {
 background-color: antiquewhite;
 
+}
 
+.hideStuff {
+    display: none!important;
 }
