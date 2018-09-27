@@ -11,3 +11,13 @@ background-color: antiquewhite;
 .hideStuff {
     display: none;
 }
+
+#navToBio {
+    margin-right: 15%;
+    padding: 60px 50px 0px 0px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+}
