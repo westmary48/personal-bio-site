@@ -2,6 +2,8 @@
 
 ## Description
 
+This is the personal site we did that provides a short bio, all of the projects we have done at NSS, and includes the technologies we used. 
+
 ## Screenshot
 ![main screenshot](./img/personalBio.png)
 
