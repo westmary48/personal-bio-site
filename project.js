@@ -44,25 +44,40 @@ const createProjectCards = () => {
 };
 createProjectCards();
 
-const addEvents = () => {
+const bioEvent = () => {
     document.getElementById('navToBio').addEventListener('click', function(event) {
         event.preventDefault()
         document.getElementById('technologiesPage').classList.add('hideStuff')
         document.getElementById('projectsPage').classList.add('hideStuff')
         document.getElementById('bioPage').classList.remove('hideStuff')
     })
+};
+const projectEvent = () => {
     document.getElementById('navToProjects').addEventListener('click', function(event) {
         event.preventDefault()
         document.getElementById('technologiesPage').classList.add('hideStuff')
         document.getElementById('projectsPage').classList.remove('hideStuff')
         document.getElementById('bioPage').classList.add('hideStuff')
     })
+};
+const techEvent = () => {
     document.getElementById('navToTechnologies').addEventListener('click', function(event) {
         event.preventDefault()
         document.getElementById('bioPage').classList.add('hideStuff')
         document.getElementById('projectsPage').classList.add('hideStuff')
         document.getElementById('technologiesPage').classList.remove('hideStuff')
     })
+};
+
+
+
+
+
+
+const addEvents = () => {
+    bioEvent();
+    projectEvent();
+    techEvent();
 };
 
 addEvents();
