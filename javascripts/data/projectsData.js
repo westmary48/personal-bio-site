@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 const loadLocations = () => {
   const projectsPromise = new Promise((resolve, reject) => {
-    $.get('http://localhost:3004/locations')
+    $.get('http://localhost:8088/')
       .done((data) => {
         resolve(data);
       })
