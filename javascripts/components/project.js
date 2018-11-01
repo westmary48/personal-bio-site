@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-
 const createProjectCards = () => {
     let newString = '';
     for(let i=0; i<projects.length; i+1){
@@ -55,7 +54,14 @@ createProjectCards();
 
 // addEvents();
 
-export default {bioEvent,techEvent, projectEvent, createProjectCards, addEvents}
+const initializeProjectsView = () => {
+    movieData.loadProjects().then((projects) => {
+    createProjectCards(projects);
+    }).catch((error) => {
+      console.error(error);
+    });
+   };
+export default {createProjectCards}
 
 
 
