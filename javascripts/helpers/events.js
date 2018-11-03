@@ -1,25 +1,27 @@
 import $ from 'jquery';
+import 'bootstrap';
+import './index.scss';
 
 const projectEvent = () => {
     $('#navToBio').on('click',()=>{
-        $('#technologiesPage').closest('navLinks').hide()
-        $('#projectsPage').closest('navLinks').show()
-        $('#bioPage').closest('navLinks').hide()
+        $('#technologiesPage').closest('fullPage').hide()
+        $('#projectsPage').closest('fullPage').show()
+        $('#bioPage').closest('fullPage').hide()
     })
 }
 
 const bioEvent = () => {
     $('#navToProjects').on('click',()=>{
-        $('#technologiesPage').closest('navLinks').hide()
-        $('#projectsPage').closest('navLinks').hide()
-        $('#bioPage').closest('navLinks').show()
+        $('#technologiesPage').closest('fullPage').hide()
+        $('#projectsPage').closest('fullPage').hide()
+        $('#bioPage').closest('fullPage').show()
     })
 }
 const techEvent = () => {
     $('#navToTechnologies').on('click',()=>{
-        $('#technologiesPage').closest('navLinks').show()
-        $('#projectsPage').closest('navLinks').hide()
-        $('#bioPage').closest('navLinks').hide()
+        $('#technologiesPage').closest('fullPage').show()
+        $('#projectsPage').closest('fullPage').hide()
+        $('#bioPage').closest('fullPage').hide()
     })
 }
 const addEvents = () => {
@@ -28,4 +30,6 @@ const addEvents = () => {
     techEvent();
 };
 
-export default addEvents;
+addEvents()
+
+export default {addEvents};
