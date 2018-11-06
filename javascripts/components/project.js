@@ -61,7 +61,7 @@ const initializeProjectsView = () => {
       console.error(error);
     });
    };
-export default {createProjectCards}
+export default createProjectCards;
 
 
 
