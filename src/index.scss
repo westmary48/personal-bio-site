@@ -1,8 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-color: darkcyan;
-    border-block-end-color: bisque
+.fullPageContainer {
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475__340.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .navToBio {
@@ -10,9 +12,9 @@ background-color: antiquewhite;
 
 }
 
-.hideStuff {
-    display: none;
-}
+// .hideStuff {
+//     display: none;
+// }
 
 #navToBio {
     margin-right: 15%;
@@ -25,7 +27,14 @@ background-color: antiquewhite;
 }
 
 .page-footer {
+    // background-image: url(https://www.pixeden.com/media/k2/galleries/136/002-subtle-light-pattern-background-texture.jpg);
+    // background-size: cover;
     position: absolute;
     bottom: 0;
     width: 100%;
+   }
+
+   .navbar {
+       background-image: url(https://www.pixeden.com/media/k2/galleries/136/002-subtle-light-pattern-background-texture.jpg);
+       background-size: cover;
    }
