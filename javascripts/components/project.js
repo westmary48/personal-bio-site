@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 const createProjectCards = () => {
     let newString = '';
-    for(let i=0; i<projects.length; i+1){
+    for(let i=0; i<projects.length; i+=1){
         newString += `<div class ="statement">`;
         newString += `<h6>${projects[i].title}</h6>`;
         newString += `<img>${projects[i].screenshot}</img>`;
