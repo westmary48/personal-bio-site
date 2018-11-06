@@ -1,6 +1,6 @@
-import $ from 'jquery';
+import axios from 'axios';
 
-const loadLocations = () => new Promise((resolve, reject) => {
+const loadProjects = () => new Promise((resolve, reject) => {
   axios.get('http://localhost:8088/')
     .done((data) => {
       resolve(data);
@@ -10,5 +10,4 @@ const loadLocations = () => new Promise((resolve, reject) => {
     });
 });
 
-import axios from 'axios';
-
+export default loadProjects;
