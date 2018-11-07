@@ -20,8 +20,8 @@ const createProjectCards = (projects) => {
 };
 
 const initializeProjectsView = () => {
-  projectsData.loadProjects().then((projects) => {
-    createProjectCards(projects);
+  projectsData.loadProjects().then((data) => {
+    createProjectCards(data.data);
   }).catch((error) => {
     console.error(error);
   });
