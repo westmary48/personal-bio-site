@@ -1,13 +1,27 @@
 import axios from 'axios';
 
-const loadProjects = () => new Promise((resolve, reject) => {
-  axios.get('http://localhost:8088/')
-    .done((data) => {
-      resolve(data);
+import apiKeys from '../../db/apiKeys.json';
+
+const baseUrl = apiKeys.firebaseKeys.databaseURL;
+
+const getAllProjectsDb = () => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/project.json`)
+    .then((result) => {
+      const allProjectsObject = result.data;
+      const allProjectsArray = [];
+      if (allProjectsObject != null) {
+        Object.keys(allProjectsObject).forEach((projectId) => {
+          const newProject = allProjectsObject[projectId];
+          newProject.id = projectId;
+          allProjectsArray.push(newProject);
+        });
+      }
+      resolve(allProjectsArray);
     })
-    .fail((error) => {
-      reject(error);
+    .catch((err) => {
+      reject(err);
     });
 });
 
-export default loadProjects;
+export default { getAllProjectsDb };
