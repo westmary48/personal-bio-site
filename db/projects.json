@@ -1,24 +1,32 @@
 {
-"projects": [
+"projects": {
 
-    {
-        "title": "Cool Project",
-        "screenshot": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDlPgWaDMQ-uYmWtoayU1dTHfAX2OrVtE5sTtWrG908-QPjACfA", 
-        "description": "This is the best project",
-        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+     "project1": {
+        "title": "ToDo",
+        "screenshot": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDlPgWaDMQ-uYmWtoayU1dTHfAX2OrVtE5sTtWrG908-QPjACfA",
+        "description": "This project was our first introduction into CRUD",
+        "technologiesUsed": "HTML, SCSS, Vanilla JavaScript, Version Control with Github, Jquery, CRUD, Axios",
         "available": true,
-        "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-        "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+        "url": "https://fir-todo-a5717.firebaseapp.com",
+        "githubUrl": "https://github.com/westmary48"
       },
-    {
-        "title": "Cool Project", 
-        "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-        "description": "This is the best project", 
-        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+     "project2": {
+        "title": "Nutshell Group Project",
+        "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+        "description": "This was a group project where we used firebase and CRUD",
+        "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github, CRUD, firebase, axios",
         "available": true,
-        "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-        "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
-    }
-    
-    ]
+        "url": "https://nutshell-mongos.firebaseapp.com",
+        "githubUrl": "https://github.com/westmary48"
+    },
+"project3": {
+    "title": "Language Translator",
+    "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+    "description": "I really enjoyed this project because it was the first time we really had to use logic",
+    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available": true,
+    "url": "https://github.com/westmary48/Language-Translator-Group-Project",
+    "githubUrl": "https://github.com/westmary48"
+}
+}
 }
