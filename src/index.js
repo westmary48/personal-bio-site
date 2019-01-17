@@ -22,4 +22,6 @@ const initializeApp = () => {
   getAllProjects();
 };
 
+initializeApp();
+
 export default initializeApp;

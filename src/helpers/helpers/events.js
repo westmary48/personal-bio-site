@@ -3,6 +3,13 @@ import 'bootstrap';
 
 import initializeProjectsView from '../components/project';
 
+const homePage = () => {
+  $('#home').click(() => {
+    const e = document.getElementById('home');// same thing
+    e.addEventListener('click', () => { window.location.reload(); });
+  });
+};
+
 const projectEvent = () => {
   $('#navToProjects').on('click', () => {
     $('#technologiesPage').hide();
@@ -31,6 +38,7 @@ const addEvents = () => {
   projectEvent();
   techEvent();
   initializeProjectsView();
+  homePage();
 };
 
 addEvents();

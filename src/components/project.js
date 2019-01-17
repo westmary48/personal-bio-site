@@ -16,7 +16,6 @@ const createProjectCards = (projects) => {
     newString += <h6>${project.githubUrl}</h6>;
     newString += </div>`;
     }
-    //   if (project.available === true) {
     $('#projectsPage').html(newString);
   });
 };

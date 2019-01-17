@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-import apiKeys from '../../db/apiKeys.json';
+import apiKeys from './data/apiKeys';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
