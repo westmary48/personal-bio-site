@@ -1,27 +1,28 @@
+// import $ from 'jquery';
+import 'bootstrap';
 import firebase from 'firebase/app';
+import './index.scss';
 
 import apiKeys from '../db/apiKeys.json';
 
-import createProjectCards from '../javascripts/components/project';
-import getAllProjectsDb from '../javascripts/data/projectsData';
-import addEvents from '../javascripts/helpers/events';
+import events from './helpers/data/events';
+import createProjectCards from './components/Projects/project';
+import getAllProjectsFromDb from './helpers/data/projectsData';
 
-const getAllProjects = () => {
-  getAllProjectsDb.getAllProjectsDb()
+const getAndPrintAllProjects = () => {
+  getAllProjectsFromDb()
     .then((allProjectsArray) => {
       createProjectCards(allProjectsArray);
     })
     .catch((error) => {
-      console.error('Error in getting teams', error);
+      console.error('Error in getting projects', error);
     });
 };
 
 const initializeApp = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
-  addEvents();
-  getAllProjects();
+  events.setEvents();
+  getAndPrintAllProjects();
 };
 
 initializeApp();
-
-export default initializeApp;
