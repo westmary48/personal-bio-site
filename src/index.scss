@@ -1,10 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
-.fullPageContainer {
-    background-image: url(https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475__340.jpg);
+.fullPage {
+    background: url(https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475__340.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+
 }
 
 .title {
@@ -12,6 +14,12 @@
     justify-content: flex-start;
 }
 .navbar {
-    background-image: url(https://www.pixeden.com/media/k2/galleries/136/002-subtle-light-pattern-background-texture.jpg);
+    background-color:black;
     background-size: cover;
+}
+
+.topTitle {
+    font-family: Courier;
+	color: White;
+	font-size:40px;
 }

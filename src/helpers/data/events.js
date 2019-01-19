@@ -13,6 +13,9 @@ const hideNonBioStuff = () => {
     $('#bioPage').show();
     $('#projectsPage').hide();
     $('#technologiesPage').hide();
+    $('#Projects').hide();
+    $('#Bio').show();
+
   });
 };
 
@@ -21,6 +24,9 @@ const hideNonTechStuff = () => {
     $('#bioPage').hide();
     $('#projectsPage').hide();
     $('#technologiesPage').show();
+    $('#Projects').hide();
+    $('#Bio').hide();
+
   });
 };
 
@@ -30,6 +36,9 @@ const hideNonProjectStuff = () => {
     $('#bioPage').hide();
     $('#projectsPage').show();
     $('#technologiesPage').hide();
+    $('#Projects').show();
+    $('#Bio').hide();
+
   });
 };
 
