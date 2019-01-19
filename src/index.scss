@@ -1,35 +1,61 @@
 @import "~bootstrap/scss/bootstrap";
 
-.fullPageContainer {
-    background-image: url(https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475__340.jpg);
+.fullPage {
+    background: url(http://getwallpapers.com/wallpaper/full/d/c/0/1090033-new-cool-tech-backgrounds-1920x1080.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.navToBio {
-background-color: antiquewhite;
-}
-
-#navToBio {
-    margin-right: 15%;
-    padding: 60px 50px 0px 0px;
+    margin-bottom:-20;
+    flex:display;
+    flex:wrap;
+    color:white;
+    font-family:Courier;
 }
 
 .title {
     display: flex;
     justify-content: flex-start;
 }
-
-.page-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 .navbar {
-    background-image: url(https://www.pixeden.com/media/k2/galleries/136/002-subtle-light-pattern-background-texture.jpg);
+    background-color:black;
     background-size: cover;
 }
-.hideStuff {
-    display: none;
+
+.topTitle {
+    font-family: Courier;
+	color: White;
+	font-size:40px;
 }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0px;
+    color:white;
+    font-family: Courier;
+  }
+
+  h2 {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width:0px;
+    color:white;
+    font-family: Courier;
+    background: url(http://getwallpapers.com/wallpaper/full/d/c/0/1090033-new-cool-tech-backgrounds-1920x1080.jpg) no-repeat center center fixed;
+
+  }
+
+  .page-footer{
+    background: black;
+    color:white;
+    font-family: Courier;
+  }
