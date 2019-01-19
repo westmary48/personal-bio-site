@@ -1,12 +1,16 @@
 @import "~bootstrap/scss/bootstrap";
 
 .fullPage {
-    background: url(https://cdn.pixabay.com/photo/2015/01/14/18/41/home-office-599475__340.jpg) no-repeat center center fixed;
+    background: url(http://getwallpapers.com/wallpaper/full/d/c/0/1090033-new-cool-tech-backgrounds-1920x1080.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    margin-bottom:-20;
+    flex:display;
+    flex:wrap;
+    color:white;
+    font-family:Courier;
 }
 
 .title {
@@ -23,3 +27,35 @@
 	color: White;
 	font-size:40px;
 }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0px;
+    color:white;
+    font-family: Courier;
+  }
+
+  h2 {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width:0px;
+    color:white;
+    font-family: Courier;
+    background: url(http://getwallpapers.com/wallpaper/full/d/c/0/1090033-new-cool-tech-backgrounds-1920x1080.jpg) no-repeat center center fixed;
+
+  }
+
+  .page-footer{
+    background: black;
+    color:white;
+    font-family: Courier;
+  }

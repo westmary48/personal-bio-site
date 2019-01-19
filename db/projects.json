@@ -3,7 +3,7 @@
 
      "project1": {
         "title": "ToDo",
-        "screenshot": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDlPgWaDMQ-uYmWtoayU1dTHfAX2OrVtE5sTtWrG908-QPjACfA",
+        "screenshot": "",
         "description": "This project was our first introduction into CRUD",
         "technologiesUsed": "HTML, SCSS, Vanilla JavaScript, Version Control with Github, Jquery, CRUD, Axios",
         "available": true,
@@ -12,7 +12,7 @@
       },
      "project2": {
         "title": "Nutshell Group Project",
-        "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+        "screenshot": "",
         "description": "This was a group project where we used firebase and CRUD",
         "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github, CRUD, firebase, axios",
         "available": true,
@@ -20,13 +20,13 @@
         "githubUrl": "https://github.com/westmary48"
     },
 "project3": {
-    "title": "Language Translator",
-    "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
-    "description": "I really enjoyed this project because it was the first time we really had to use logic",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "title": "React-Holidays",
+    "screenshot": "",
+    "description": "This was the first project we did on our own with react.",
+    "technologiesUsed": "React, SASS, Firebase, npm, JavaScript, Version Control with Github",
     "available": true,
-    "url": "https://github.com/westmary48/Language-Translator-Group-Project",
-    "githubUrl": "https://github.com/westmary48"
+    "url": "https://github.com/westmary48/home-for-the-holidays",
+    "githubUrl": "ttps://github.com/westmary48"
 }
 }
 }

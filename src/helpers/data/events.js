@@ -15,7 +15,6 @@ const hideNonBioStuff = () => {
     $('#technologiesPage').hide();
     $('#Projects').hide();
     $('#Bio').show();
-
   });
 };
 
@@ -26,7 +25,6 @@ const hideNonTechStuff = () => {
     $('#technologiesPage').show();
     $('#Projects').hide();
     $('#Bio').hide();
-
   });
 };
 
@@ -38,7 +36,6 @@ const hideNonProjectStuff = () => {
     $('#technologiesPage').hide();
     $('#Projects').show();
     $('#Bio').hide();
-
   });
 };
 
